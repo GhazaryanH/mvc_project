@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="txeq@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.1">
+    <root id="1"/>
+    <schema id="2" parent="1" name="txeq">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="information_schema"/>
+    <schema id="4" parent="1" name="laravel-basics"/>
+    <schema id="5" parent="1" name="mysql"/>
+    <schema id="6" parent="1" name="performance_schema"/>
+    <schema id="7" parent="1" name="restarted"/>
+    <schema id="8" parent="1" name="sys"/>
+    <table id="9" parent="2" name="friends"/>
+    <table id="10" parent="2" name="messages"/>
+    <table id="11" parent="2" name="users"/>
+    <column id="12" parent="9" name="id">
+      <Position>1</Position>
+      <DataType>int(10)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="13" parent="9" name="u1_id">
+      <Position>2</Position>
+      <DataType>int(10)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="14" parent="9" name="u2_id">
+      <Position>3</Position>
+      <DataType>int(10)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="15" parent="9" name="accept">
+      <Position>4</Position>
+      <DataType>enum(&apos;0&apos;, &apos;1&apos;, &apos;2&apos;)|0</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+    </column>
+    <key id="16" parent="9" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="17" parent="10" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="18" parent="10" name="from_id">
+      <Position>2</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="19" parent="10" name="to_id">
+      <Position>3</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="20" parent="10" name="text">
+      <Position>4</Position>
+      <DataType>text|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="21" parent="10" name="seen">
+      <Position>5</Position>
+      <DataType>tinyint(4)|0</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+    </column>
+    <column id="22" parent="10" name="date">
+      <Position>6</Position>
+      <DataType>timestamp|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="23" parent="10" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="24" parent="11" name="id">
+      <Position>1</Position>
+      <DataType>int(10)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="25" parent="11" name="f_name">
+      <Position>2</Position>
+      <DataType>varchar(20)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="26" parent="11" name="l_name">
+      <Position>3</Position>
+      <DataType>varchar(30)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="27" parent="11" name="email">
+      <Position>4</Position>
+      <DataType>varchar(100)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="28" parent="11" name="password">
+      <Position>5</Position>
+      <DataType>varchar(32)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="29" parent="11" name="avatar">
+      <Position>6</Position>
+      <DataType>varchar(100)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="30" parent="11" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>
